@@ -1,9 +1,8 @@
 plugins {
     id 'java'
     id 'application'
-    id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'com.github.johnrengelman.shadow' version '4.0.2'
     // TODO add jacoco
-    id 'jacoco'
 }
 
 group 'com.example.helloworld'
@@ -11,8 +10,8 @@ version '1.0-SNAPSHOT'
 
 mainClassName = 'com.example.helloworld.HelloWorldApplication'
  
-sourceCompatibility = 11
-targetCompatibility = 11
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
 
 repositories {
     mavenCentral()
@@ -40,15 +39,5 @@ shadowJar {
 }
 
 // TODO Specify Jacoco version
-jacoco {
-     toolVersion = "0.8.9"
 
-}
 // TODO Configure Jacoco
- jacocoTestReport{
-     reports{
-         xml.required=true
-         csv.required=true
-         xml.required=true
-     }
- }
