@@ -10,8 +10,8 @@ version '1.0-SNAPSHOT'
 
 mainClassName = 'com.example.helloworld.HelloWorldApplication'
 
-sourceCompatibility = 11
-targetCompatibility = 11
+sourceCompatibility = 17
+targetCompatibility = 17
 
 repositories {
     mavenCentral()
